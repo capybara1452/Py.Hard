@@ -6,7 +6,7 @@ nav > ul {
   list-style: none;   /* 移除項目符號 */
 }
 nav > ul {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(226, 226, 226);
   list-style: none;   /* 移除項目符號 */
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ nav a {
 }
 /* 滑鼠移到 `<a>` 時變成深底淺色 */
 nav a:hover {
-  background-color: rgb(115, 115, 115);
+  background-color: rgb(153, 153, 153);
   color: white;
 }
 .flex-nav {
