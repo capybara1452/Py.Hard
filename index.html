@@ -5,20 +5,26 @@
 
   <head>    
 
+    <!-- 網頁名稱 -->
     <link rel="icon" href="./img/icon/icon_index.png"/>
     <title>野兔小幫手</title>      
 
+    <!-- Tocas UI -->
     <link rel="stylesheet" href="./tocas/dist/tocas.min.css"/>
     <script src="./tocas/dist/tocas.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- 分頁CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 資料搜尋 -->
     <script type="text/javascript" src="./js/search.js"></script>
-    <script type="text/javascript" src="./js/search2.js"></script>
+
 
   </head>
 
   <body>
 
+    <!-- 最上方 -->
     <nav>
       <ul class="flex-nav">      
         <div class="ts-tab is-segmented">    
@@ -35,14 +41,65 @@
       </div>
     </nav>
 
-    
+
+    <!-- 圖片 -->
     <u1 class="flex-nav">
-      <img src="./img/1.gif">
-      <img src="./img/11.gif">
+      <div class="ts-image is-circular is-small">
+        <img src="./img/1.gif">
+        <img src="./img/11.gif">
+      </div>  
+    </u1>
+
+    <div class="ts-divider is-section"></div>    <!-- 分隔線 -->
+  
+    <!-- 輸入關鍵字 -->
+    <u1 class="flex-nav">
+      <div class="ts-input is-basic is-start-icon">
+        <span class="ts-icon is-magnifying-glass-icon"></span>
+        <input type="text" placeholder="輸入關鍵字…" class="light-table-filter" data-table="ts-table">
+      </div>
     </u1>
 
 
+    <!-- 按鈕 -->
+    <button class="ts-button is-end-icon is-secondary" onclick="ShowMeDate()"><span class="ts-avatar is-circular"><img src="./img/寶可夢/001.png"></span>妙蛙種子</button>
+    <button class="ts-button is-end-icon is-secondary" onclick="ShowMeDate()"><span class="ts-avatar is-circular"><img src="./img/寶可夢/002.png"></span>妙蛙草</button>
 
+ 
+
+
+
+
+    <div class="ts-divider is-section"></div>    <!-- 分隔線 -->
+    
+    <!-- 表格 -->
+    <u1 class="flex-nav">
+      <div class="ts-box is-collapsed">
+        <table class="ts-table is-collapsed">
+            <thead>
+                <tr><th>模樣</th><th>編號</th><th>名稱</th><th>專長</th><th>主技能</th><th>樹果</th></tr>
+            </thead>
+            <tbody>
+
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/001.png"></span></td><td>001</td><td>妙蛙種子</td><td>食材</td><td>食材獲取S</td><td>金枕果</td></tr>              
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/002.png"></span></td><td>002</td><td>妙蛙草</td><td>食材</td><td>食材獲取S</td><td>金枕果</td></tr>
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/003.png"></span></td><td>003</td><td>妙蛙花</td><td>食材</td><td>食材獲取S</td><td>金枕果</td></tr>
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/004.png"></span></td><td>004</td><td>小火龍</td><td>食材</td><td>食材獲取S</td><td>蘋野果</td></tr>
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/005.png"></span></td><td>005</td><td>火恐龍</td><td>食材</td><td>食材獲取S</td><td>蘋野果</td></tr>
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/006.png"></span></td><td>006</td><td>噴火龍</td><td>食材</td><td>食材獲取S</td><td>蘋野果</td></tr>              
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/007.png"></span></td><td>007</td><td>傑尼龜</td><td>食材</td><td>食材獲取S</td><td>橙橙果</td></tr>
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/008.png"></span></td><td>008</td><td>卡咪龜</td><td>食材</td><td>食材獲取S</td><td>橙橙果</td></tr>
+                <tr><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/009.png"></span></td><td>009</td><td>水箭龜</td><td>食材</td><td>食材獲取S</td><td>橙橙果</td></tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="9">統計筆數：9</th>
+                </tr>
+            </tfoot>
+        </table>
+      </div>
+    </u1>
 
 
 
