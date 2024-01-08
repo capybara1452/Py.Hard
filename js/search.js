@@ -1,6 +1,6 @@
 (function(document) {
     'use strict';
-  
+
     // 建立 LightTableFilter
     var LightTableFilter = (function(Arr) {
   
@@ -50,3 +50,4 @@ function ShowMeDate() {
   　var Today=new Date();
   　alert("今天日期是 " + Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日");
   }
+
