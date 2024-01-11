@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+  <head>    
+
+    <!-- 網頁名稱 -->
+    <link rel="icon" href="./img/icon/icon_index.png"/>
+    <title>野兔小幫手</title>      
+
+    <!-- Tocas UI -->
+    <link rel="stylesheet" href="./tocas/tocas.min.css"/>
+    <script src="./tocas/tocas.min.js"></script>
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/search.js"></script>
+
+  </head>
+
+
+  <body>
+
+
+    <!-- 【最上方的分頁】 -->        
+    <div class="ts-text is-big"><!-- [文字] → [尺寸] → [更大] -->   
+      <div class="ts-content is-rounded is-tertiary"><!-- [內容區塊] → [圓角的] -->      
+        <div class="ts-tab is-center-aligned"><!-- [分頁籤] → [項目對齊] --> 
+          <div class="ts-tab is-pilled"> <!-- [分頁籤] → [藥丸的] -->  
+          
+            <a class="item" href="index.html">首頁</a>
+            <a class="item is-active" href="寶可夢圖鑑.html">寶可夢圖鑑</a>
+            <a class="item" href="食譜圖鑑.html">食譜圖鑑</a>       
+
+    </div></div></div></div>  
+
+
+    
+    <!-- 【搜尋架構】 -->
+    <div class="ts-wrap is-center-aligned"><!-- [間隔容器] → [水平對齊] → [置中對齊] -->
+      <div class="ts-content is-center-aligned"><!-- [內容區塊] → [文字對齊] → [我置中] -->
+         
+
+        <!-- 【輸入關鍵字】 --> 
+        <div class="ts-content is-vertically-padded"><!-- [內容區塊] → [增加內距] → [僅有增加上下垂直內距] -->
+          <div class="ts-input is-circular"><!-- [輸入欄位] → [圓角的] -->   
+            <input type="text" placeholder="輸入關鍵字…" class="light-table-filter" data-table="ts-table">   
+        </div></div>  
+        
+
+
+        <!-- 【下拉選項】 -->                        
+        <!-- 1 -->
+        <div class="ts-select is-solid"><!-- [下拉式選擇] → [實心填充的] -->
+          <select class="light-table-filter"  data-table="ts-table" data-tooltip="專長">
+            <option>請選擇專長</option>
+            <option>食 材</option>
+            <option>樹 果</option>
+            <option>技 能</option>
+          </select>
+        </div>
+
+        <!-- 2 -->
+        <div class="ts-select is-solid"><!-- [下拉式選擇] → [實心填充的] -->
+          <select class="light-table-filter"  data-table="ts-table" data-tooltip="技能">
+            <option>請選擇技能</option>
+            <option>能量填充S1</option>
+            <option>能量填充S2</option>
+            <option>能量填充M</option>
+            <option>夢之碎片獲取S1</option>
+            <option>夢之碎片獲取S2</option>
+            <option>活力療癒S</option>
+            <option>活力填充S</option>
+            <option>活力全體療癒S</option>
+            <option>幫手支援S</option>
+            <option>食材獲取S</option>
+            <option>料理強化S</option>
+            <option>指揮</option>
+          </select>
+        </div>
+
+        <!-- 3 -->
+        <div class="ts-select is-solid"><!-- [下拉式選擇] → [實心填充的] -->
+          <select class="light-table-filter"  data-table="ts-table" data-tooltip="樹果">
+            <option>請選擇樹果</option>
+            <option>柿仔果</option>
+            <option>蘋野果</option>
+            <option>橙橙果</option>
+            <option>萄葡果</option>
+            <option>金枕果</option>
+            <option>莓莓果</option>
+            <option>櫻子果</option>
+            <option>零餘果</option>
+            <option>勿花果</option>
+            <option>椰木果</option>
+            <option>芒芒果</option>
+            <option>木子果</option>
+            <option>文柚果</option>
+            <option>墨莓果</option>
+            <option>番荔果</option>
+            <option>異奇果</option>
+            <option>靛莓果</option>
+            <option>桃桃果</option>
+          </select>
+        </div>
+
+
+    </div></div>
+
+    
+  
+     <!-- 【表格】 -->
+     <div class="ts-wrap is-center-aligned"><!-- [間隔容器] →[水平對齊] → [置中對齊] -->
+      <div class="ts-content is-center-aligned"><!-- [內容區塊] → [文字對齊] → [我置中] -->
+        <div class="ts-box is-collapsed"><!-- [箱型容器] → [最小寬度的] --> 
+
+          <table class="ts-table is-collapsed">
+            <thead>
+                <tr><th>編號</th><th>模樣</th><th>名稱</th><th>專長</th><th>主技能</th><th>樹果模樣</th><th>樹果</th></tr>
+            </thead>
+            <tbody>
+
+                <tr><td>001</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/001.png"></span></td><td>妙蛙種子</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>              
+                <tr><td>002</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/002.png"></span></td><td>妙蛙草</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>   
+                <tr><td>003</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/003.png"></span></td><td>妙蛙花</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>
+                <tr><td>004</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/004.png"></span></td><td>小火龍</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>
+                <tr><td>005</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/005.png"></span></td><td>火恐龍</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>
+                <tr><td>006</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/006.png"></span></td><td>噴火龍</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>              
+                <tr><td>007</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/007.png"></span></td><td>傑尼龜</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>008</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/008.png"></span></td><td>卡咪龜</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>009</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/009.png"></span></td><td>水箭龜</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>010</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/010.png"></span></td><td>綠毛蟲</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/木子果.png"></span></td><td>木子果</td></tr>
+                <tr><td>011</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/011.png"></span></td><td>鐵甲蛹</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/木子果.png"></span></td><td>木子果</td></tr>
+                <tr><td>012</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/012.png"></span></td><td>巴大蝶</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/木子果.png"></span></td><td>木子果</td></tr>
+                <tr><td>019</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/019.png"></span></td><td>小拉達</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>020</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/020.png"></span></td><td>拉達</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>023</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/023.png"></span></td><td>阿柏蛇</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/零餘果.png"></span></td><td>零餘果</td></tr>
+                <tr><td>024</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/024.png"></span></td><td>阿柏怪</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/零餘果.png"></span></td><td>零餘果</td></tr>
+                <tr><td>025</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/025.png"></span></td><td>皮卡丘</td><td>樹 果</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>025</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/025_Halloween.png"></span></td><td>皮卡丘（萬聖節）</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>025</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/025_Holiday.png"></span></td><td>皮卡丘（佳節）</td><td>樹 果</td><td>夢之碎片獲取S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>026</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/026.png"></span></td><td>雷丘</td><td>樹 果</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>035</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/035.png"></span></td><td>皮皮</td><td>樹 果</td><td>指揮</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>036</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/036.png"></span></td><td>皮可西</td><td>樹 果</td><td>指揮</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>039</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/039.png"></span></td><td>胖丁</td><td>技 能</td><td>活力全體療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>040</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/040.png"></span></td><td>胖可丁</td><td>技 能</td><td>活力全體療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>050</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/050.png"></span></td><td>地鼠</td><td>食 材</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/勿花果.png"></span></td><td>勿花果</td></tr>
+                <tr><td>051</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/051.png"></span></td><td>三地鼠</td><td>食 材</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/勿花果.png"></span></td><td>勿花果</td></tr>
+                <tr><td>052</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/052.png"></span></td><td>喵喵</td><td>技 能</td><td>夢之碎片獲取S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>053</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/053.png"></span></td><td>貓老大</td><td>技 能</td><td>夢之碎片獲取S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>054</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/054.png"></span></td><td>可達鴨</td><td>技 能</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>055</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/055.png"></span></td><td>哥達鴨</td><td>技 能</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>056</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/056.png"></span></td><td>猴怪</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/櫻子果.png"></span></td><td>櫻子果</td></tr>
+                <tr><td>057</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/057.png"></span></td><td>火爆猴</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/櫻子果.png"></span></td><td>櫻子果</td></tr>
+                <tr><td>058</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/058.png"></span></td><td>卡蒂狗</td><td>技 能</td><td>幫手支援S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>
+                <tr><td>059</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/059.png"></span></td><td>風速狗</td><td>技 能</td><td>幫手支援S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>
+                <tr><td>069</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/069.png"></span></td><td>喇叭芽</td><td>食 材</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>
+                <tr><td>070</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/070.png"></span></td><td>口呆花</td><td>食 材</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>
+                <tr><td>071</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/071.png"></span></td><td>大食花</td><td>食 材</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>
+                <tr><td>074</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/074.png"></span></td><td>小拳石</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/文柚果.png"></span></td><td>文柚果</td></tr>
+                <tr><td>075</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/075.png"></span></td><td>隆隆石</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/文柚果.png"></span></td><td>文柚果</td></tr>
+                <tr><td>076</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/076.png"></span></td><td>隆隆岩</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/文柚果.png"></span></td><td>文柚果</td></tr>
+                <tr><td>079</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/079.png"></span></td><td>呆呆獸</td><td>技 能</td><td>活力療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>080</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/080.png"></span></td><td>呆殼獸</td><td>技 能</td><td>活力療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>081</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/081.png"></span></td><td>小磁怪</td><td>技 能</td><td>料理強化S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/靛莓果.png"></span></td><td>靛莓果</td></tr>
+                <tr><td>082</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/082.png"></span></td><td>三合一磁怪</td><td>技 能</td><td>料理強化S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/靛莓果.png"></span></td><td>靛莓果</td></tr>
+                <tr><td>084</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/084.png"></span></td><td>嘟嘟</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/椰木果.png"></span></td><td>椰木果</td></tr>
+                <tr><td>085</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/085.png"></span></td><td>嘟嘟利</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/椰木果.png"></span></td><td>椰木果</td></tr>
+                <tr><td>092</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/092.png"></span></td><td>鬼斯</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/墨莓果.png"></span></td><td>墨莓果</td></tr>
+                <tr><td>093</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/093.png"></span></td><td>鬼斯通</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/墨莓果.png"></span></td><td>墨莓果</td></tr>
+                <tr><td>094</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/094.png"></span></td><td>耿鬼</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/墨莓果.png"></span></td><td>墨莓果</td></tr>
+                <tr><td>095</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/095.png"></span></td><td>大岩蛇</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/文柚果.png"></span></td><td>文柚果</td></tr>
+                <tr><td>104</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/104.png"></span></td><td>卡拉卡拉</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/勿花果.png"></span></td><td>勿花果</td></tr>
+                <tr><td>105</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/105.png"></span></td><td>嘎啦嘎啦</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/勿花果.png"></span></td><td>勿花果</td></tr>
+                <tr><td>115</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/115.png"></span></td><td>袋獸</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>122</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/122.png"></span></td><td>魔牆人偶</td><td>食 材</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/芒芒果.png"></span></td><td>芒芒果</td></tr>
+                <tr><td>127</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/127.png"></span></td><td>凱羅斯</td><td>食 材</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/木子果.png"></span></td><td>木子果</td></tr>
+                <tr><td>132</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/132.png"></span></td><td>百變怪</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>133</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/133.png"></span></td><td>伊布</td><td>技 能</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>134</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/134.png"></span></td><td>水伊布</td><td>技 能</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>135</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/135.png"></span></td><td>雷伊布</td><td>技 能</td><td>幫手支援S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>136</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/136.png"></span></td><td>火伊布</td><td>技 能</td><td>料理強化S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>
+                <tr><td>152</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/152.png"></span></td><td>菊草葉</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>
+                <tr><td>153</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/153.png"></span></td><td>月桂葉</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>
+                <tr><td>154</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/154.png"></span></td><td>大竺葵</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>
+                <tr><td>155</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/155.png"></span></td><td>火球鼠</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>
+                <tr><td>156</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/156.png"></span></td><td>火岩鼠</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>
+                <tr><td>157</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/157.png"></span></td><td>火爆獸</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/蘋野果.png"></span></td><td>蘋野果</td></tr>
+                <tr><td>158</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/158.png"></span></td><td>小鋸鱷</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>159</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/159.png"></span></td><td>藍鱷</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>160</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/160.png"></span></td><td>大力鱷</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>172</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/172.png"></span></td><td>皮丘</td><td>樹 果</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>173</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/173.png"></span></td><td>皮寶寶</td><td>樹 果</td><td>指揮</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>174</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/174.png"></span></td><td>寶寶丁</td><td>技 能</td><td>活力全體療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>175</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/175.png"></span></td><td>波克比</td><td>技 能</td><td>指揮</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>176</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/176.png"></span></td><td>波克基古</td><td>技 能</td><td>指揮</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>179</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/179.png"></span></td><td>咩利羊</td><td>技 能</td><td>能量填充M</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>180</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/180.png"></span></td><td>茸茸羊</td><td>技 能</td><td>能量填充M</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>181</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/181.png"></span></td><td>電龍</td><td>技 能</td><td>能量填充M</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/萄葡果.png"></span></td><td>萄葡果</td></tr>
+                <tr><td>185</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/185.png"></span></td><td>樹才怪</td><td>技 能</td><td>能量填充M</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/文柚果.png"></span></td><td>文柚果</td></tr>
+                <tr><td>196</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/196.png"></span></td><td>太陽伊布</td><td>技 能</td><td>能量填充M</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/芒芒果.png"></span></td><td>芒芒果</td></tr>
+                <tr><td>197</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/197.png"></span></td><td>月亮伊布</td><td>技 能</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/異奇果.png"></span></td><td>異奇果</td></tr>
+                <tr><td>199</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/199.png"></span></td><td>呆呆王</td><td>技 能</td><td>活力療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/橙橙果.png"></span></td><td>橙橙果</td></tr>
+                <tr><td>202</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/202.png"></span></td><td>果然翁</td><td>技 能</td><td>活力療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/芒芒果.png"></span></td><td>芒芒果</td></tr>
+                <tr><td>208</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/208.png"></span></td><td>大鋼蛇</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/靛莓果.png"></span></td><td>靛莓果</td></tr>
+                <tr><td>214</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/214.png"></span></td><td>赫拉克羅斯</td><td>技 能</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/木子果.png"></span></td><td>木子果</td></tr>
+                <tr><td>225</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/225.png"></span></td><td>信使鳥</td><td>食 材</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/椰木果.png"></span></td><td>椰木果</td></tr>
+                <tr><td>228</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/228.png"></span></td><td>戴魯比</td><td>樹 果</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/異奇果.png"></span></td><td>異奇果</td></tr>
+                <tr><td>229</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/229.png"></span></td><td>黑魯加</td><td>樹 果</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/異奇果.png"></span></td><td>異奇果</td></tr>
+                <tr><td>246</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/246.png"></span></td><td>幼基拉斯</td><td>食 材</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/文柚果.png"></span></td><td>文柚果</td></tr>
+                <tr><td>247</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/247.png"></span></td><td>沙基拉斯</td><td>食 材</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/文柚果.png"></span></td><td>文柚果</td></tr>
+                <tr><td>248</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/248.png"></span></td><td>班基拉斯</td><td>食 材</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/異奇果.png"></span></td><td>異奇果</td></tr>
+                <tr><td>287</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/287.png"></span></td><td>懶人獺</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>288</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/288.png"></span></td><td>過動猿</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>289</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/289.png"></span></td><td>請假王</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/柿仔果.png"></span></td><td>柿仔果</td></tr>
+                <tr><td>302</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/302.png"></span></td><td>勾魂眼</td><td>食 材</td><td>夢之碎片獲取S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/異奇果.png"></span></td><td>異奇果</td></tr>
+                <tr><td>316</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/316.png"></span></td><td>溶食獸</td><td>技 能</td><td>夢之碎片獲取S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/零餘果.png"></span></td><td>零餘果</td></tr>
+                <tr><td>317</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/317.png"></span></td><td>吞食獸</td><td>技 能</td><td>夢之碎片獲取S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/零餘果.png"></span></td><td>零餘果</td></tr>
+                <tr><td>333</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/333.png"></span></td><td>青綿鳥</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/椰木果.png"></span></td><td>椰木果</td></tr>
+                <tr><td>334</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/334.png"></span></td><td>七夕青鳥</td><td>樹 果</td><td>活力填充S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/番荔果.png"></span></td><td>番荔果</td></tr>
+                <tr><td>353</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/353.png"></span></td><td>怨影娃娃</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/墨莓果.png"></span></td><td>墨莓果</td></tr>
+                <tr><td>354</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/354.png"></span></td><td>詛咒娃娃</td><td>樹 果</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/墨莓果.png"></span></td><td>墨莓果</td></tr>
+                <tr><td>359</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/359.png"></span></td><td>阿勃梭魯</td><td>食 材</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/異奇果.png"></span></td><td>異奇果</td></tr>
+                <tr><td>360</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/360.png"></span></td><td>小果然</td><td>技 能</td><td>活力療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/芒芒果.png"></span></td><td>芒芒果</td></tr>
+                <tr><td>363</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/363.png"></span></td><td>海豹球</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/莓莓果.png"></span></td><td>莓莓果</td></tr>
+                <tr><td>364</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/364.png"></span></td><td>海魔獅</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/莓莓果.png"></span></td><td>莓莓果</td></tr>
+                <tr><td>365</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/365.png"></span></td><td>帝牙海獅</td><td>樹 果</td><td>食材獲取S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/莓莓果.png"></span></td><td>莓莓果</td></tr>
+                <tr><td>438</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/438.png"></span></td><td>盆才怪</td><td>食 材</td><td>能量填充M</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/文柚果.png"></span></td><td>文柚果</td></tr>
+                <tr><td>439</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/439.png"></span></td><td>魔尼尼</td><td>食 材</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/芒芒果.png"></span></td><td>芒芒果</td></tr>
+                <tr><td>447</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/447.png"></span></td><td>利歐路</td><td>技 能</td><td>夢之碎片獲取S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/櫻子果.png"></span></td><td>櫻子果</td></tr>
+                <tr><td>448</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/448.png"></span></td><td>路卡利歐</td><td>技 能</td><td>夢之碎片獲取S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/櫻子果.png"></span></td><td>櫻子果</td></tr>
+                <tr><td>453</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/453.png"></span></td><td>不良蛙</td><td>食 材</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/零餘果.png"></span></td><td>零餘果</td></tr>
+                <tr><td>454</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/454.png"></span></td><td>毒骷蛙</td><td>食 材</td><td>能量填充S1</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/零餘果.png"></span></td><td>零餘果</td></tr>
+                <tr><td>459</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/459.png"></span></td><td>雪笠怪</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/莓莓果.png"></span></td><td>莓莓果</td></tr>
+                <tr><td>460</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/460.png"></span></td><td>暴雪王</td><td>食 材</td><td>能量填充S2</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/莓莓果.png"></span></td><td>莓莓果</td></tr>
+                <tr><td>462</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/462.png"></span></td><td>自爆磁怪</td><td>技 能</td><td>料理強化S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/靛莓果.png"></span></td><td>靛莓果</td></tr>
+                <tr><td>468</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/468.png"></span></td><td>波克基斯</td><td>技 能</td><td>指揮</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                <tr><td>470</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/470.png"></span></td><td>葉伊布</td><td>技 能</td><td>活力療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/金枕果.png"></span></td><td>金枕果</td></tr>
+                <tr><td>471</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/471.png"></span></td><td>冰伊布</td><td>技 能</td><td>料理強化S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/莓莓果.png"></span></td><td>莓莓果</td></tr>
+                <tr><td>700</td><td><span class="ts-avatar is-circular"><img src="./img/寶可夢/700.png"></span></td><td>仙子伊布</td><td>技 能</td><td>活力全體療癒S</td><td><span class="ts-avatar is-circular"><img src="./img/樹果/桃桃果.png"></span></td><td>桃桃果</td></tr>
+                                
+            </tbody>
+        </table>
+      
+    </div></div></div>
+
+
+
+
+
+
+  </body>
+
+
+
+  
+</html>
+
+
+
+
