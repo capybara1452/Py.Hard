@@ -4,7 +4,7 @@
     // 建立 LightTableFilter
     var LightTableFilter = (function(Arr) {
   
-      var _input;
+      var _input, _input2;
   
       // 資料輸入事件處理函數
       function _onInputEvent(e) {
@@ -16,12 +16,60 @@
           });
         });
       }
+      
+
+        // // 資料篩選函數，顯示包含關鍵字的列，其餘隱藏
+        // function _filter(row) {
+        //   var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+        //   row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+        // }
+
+        // console.log(sel1);
+        // console.log(sel2);
+
+
   
-      // 資料篩選函數，顯示包含關鍵字的列，其餘隱藏
-      function _filter(row) {
-        var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
-        row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
-      }
+
+
+        // 資料篩選函數，顯示包含關鍵字的列，其餘隱藏
+        function _filter(row) {
+
+          var text = row.textContent.toLowerCase(),
+              sel1 = document.getElementById("【屬性】").value.toLowerCase(),
+              sel2 = document.getElementById("【睡眠類型】").value.toLowerCase(),
+              sel3 = document.getElementById("【出沒島嶼】").value.toLowerCase(),
+              sel4 = document.getElementById("【專長】").value.toLowerCase(),
+              sel5 = document.getElementById("【樹果】").value.toLowerCase(),
+              sel6 = document.getElementById("【食材】").value.toLowerCase(),
+              sel7 = document.getElementById("【主技能】").value.toLowerCase();
+        
+
+          let x = 1
+          while (x <= 3) {    
+                        
+            if (sel1 !== "【屬性】"){if (text.indexOf(sel1) === -1){row.style.display = 'none'
+            break}}
+            if (sel2 !== "【睡眠類型】"){if (text.indexOf(sel2) === -1){row.style.display = 'none'
+            break}}
+            if (sel3 !== "【出沒島嶼】"){if (text.indexOf(sel3) === -1){row.style.display = 'none'
+            break}}
+            if (sel4 !== "【專長】"){if (text.indexOf(sel4) === -1){row.style.display = 'none'
+            break}}
+            if (sel5 !== "【樹果】"){if (text.indexOf(sel5) === -1){row.style.display = 'none'
+            break}}
+            if (sel6 !== "【食材】"){if (text.indexOf(sel6) === -1){row.style.display = 'none'
+            break}}
+            if (sel7 !== "【主技能】"){if (text.indexOf(sel7) === -1){row.style.display = 'none'
+            break}}
+
+            row.style.display = 'table-row'
+            break
+            x++
+          }
+
+        }
+
+
   
       return {
         // 初始化函數
